@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jordon H Griffin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Light mode grid */
+        body.light {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #fff;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+            background-size: 1.25vw 1.25vw;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        /* Dark mode grid */
+        body.dark {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #1a1a1a;
+            background-image:
+                linear-gradient(rgba(243, 243, 243, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(243, 243, 243, 0.1) 1px, transparent 1px);
+            background-size: 1.25vw 1.25vw;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="light" id="grid-body">
+    <script>
+        // Get theme from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const theme = urlParams.get('theme') || 'light';
+        document.body.className = theme;
+    </script>
+</body>
+</html>
