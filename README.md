@@ -31,7 +31,7 @@ My portfolio is a single, clean HTML file hosted on **Cloudflare Pages**, deploy
 ---
 
 <p align="center">
-  <a href="https://jordonhgriffin.github.io">
+  <a href="https://jordonhgriffin.com">
     <img src="https://img.shields.io/badge/Visit_Portfolio-3B82F6?style=for-the-badge&logo=googlechrome&logoColor=white" />
   </a>
 </p>
