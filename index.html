@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Version 26.4.8.3 - updated GitHub repo links to jhg -->
+<!-- Version 26.4.10.1 - removed logo glow animation -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -2374,23 +2374,6 @@
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
         aspect-ratio: 1;
-        animation: logo-glow 4s ease-in-out infinite;
-        will-change: filter;
-      }
-
-      @keyframes logo-glow {
-        0%, 100% { filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2)); }
-        50%       { filter: drop-shadow(0 0 22px rgba(0, 0, 0, 0.55)); }
-      }
-
-      [data-theme="dark"] #logo {
-        animation: logo-glow-dark 4s ease-in-out infinite;
-        will-change: filter;
-      }
-
-      @keyframes logo-glow-dark {
-        0%, 100% { filter: drop-shadow(0 0 6px rgba(243, 243, 243, 0.3)); }
-        50%       { filter: drop-shadow(0 0 30px rgba(243, 243, 243, 0.8)); }
       }
 
       #logo img {
@@ -3427,6 +3410,6 @@
         requestAnimationFrame(step);
       })();
     </script>
-    <footer>Version 26.4.8.3</footer>
+    <footer>Version 26.4.10.1</footer>
   </body>
 </html>
