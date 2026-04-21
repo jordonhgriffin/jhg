@@ -250,7 +250,7 @@
     "editor.foldingStrategy": "indentation",
     "editor.showFoldingControls": "always",
     "editor.parameterHints.enabled": true,
-    "editor.hover.enabled": true,
+    "editor.hover.enabled": "on",
     "editor.codeActionsOnSave": {
         "source.fixAll": "explicit",
         "source.organizeImports": "explicit"
@@ -322,5 +322,6 @@
     "extensions.autoUpdate": true,
     "extensions.autoCheckUpdates": true,
     "update.mode": "default",
-    "telemetry.telemetryLevel": "off"
+    "telemetry.telemetryLevel": "off",
+    "liveServer.settings.port": 5501
 }
