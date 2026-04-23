@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Version 26.4.21.1 - 60fps scroll: fixed background, removed backdrop-filter/glow animation, specific transitions, deduplicated scroll listener -->
+<!-- Version 26.4.22.1 - Updated footer with Made by JHG and MacBook Pro Silicon links -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -600,6 +600,15 @@
         background: rgba(42, 42, 42, 0.9);
         border-top: 1px solid rgba(68, 68, 68, 0.3);
         color: #fff;
+      }
+
+      footer a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      footer a:hover {
+        color: inherit;
       }
 
       /* Dark mode styles */
@@ -3382,6 +3391,6 @@
         requestAnimationFrame(step);
       })();
     </script>
-    <footer>Version 26.4.21.1</footer>
+    <footer>Version 26.4.22.1 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)">MacBook Pro Silicon</a></footer>
   </body>
 </html>
