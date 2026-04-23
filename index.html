@@ -1,12 +1,12 @@
 <!doctype html>
-<!-- Version 26.4.22.1 - Updated footer with Made by JHG and MacBook Pro Silicon links -->
+<!-- Version 26.4.22.3 - Removed all em dashes, switched to Inter font with Apple-like rendering -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Jordon Griffin | Telecom & Systems Professional</title>
     <meta
       name="description"
-      content="Jordon Griffin (Jordon H Griffin) — Telecom & Systems Professional specializing in telecommunications, network infrastructure, and systems design."
+      content="Jordon Griffin (Jordon H Griffin) - Telecom & Systems Professional specializing in telecommunications, network infrastructure, and systems design."
     />
     <meta name="keywords" content="Jordon Griffin, Jordon H Griffin, telecom, telecommunications, systems professional, network infrastructure, project management, MIS, systems design, cable harness, Massachusetts" />
     <meta name="author" content="Jordon H Griffin" />
@@ -57,7 +57,7 @@
     </script>
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -111,11 +111,14 @@
       }
 
       body {
-        font-family: "Roboto", sans-serif;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
         margin: 0;
         padding: 0;
         color: var(--text-color);
-        line-height: 1.6;
+        line-height: 1.47059;
+        letter-spacing: -0.022em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
         background-color: var(--dark-bg);
         min-height: 100vh;
       }
@@ -592,12 +595,12 @@
         color: var(--text-color);
         font-size: 0.9em;
         margin-top: 50px;
-        background: rgba(255, 255, 255, 0.9);
+        background: #fff;
         border-top: 1px solid var(--border-color);
       }
 
       [data-theme="dark"] footer {
-        background: rgba(42, 42, 42, 0.9);
+        background: #2a2a2a;
         border-top: 1px solid rgba(68, 68, 68, 0.3);
         color: #fff;
       }
@@ -2602,7 +2605,7 @@
               </h2>
             </div>
             <p>
-              Hey, I'm Jordon. I think in systems — how things connect, how they
+              Hey, I'm Jordon. I think in systems: how things connect, how they
               break, and how they can be built better. I'm drawn to the
               relationships between Earth and its inhabitants: ecological,
               digital, social. I hope to be part of both the discovery and
@@ -2617,13 +2620,13 @@
               while recognizing how we got here. I come from generations mainly
               out of Mississippi. I was born in Georgia, not too far outside of
               Atlanta. I am a Black American, and what that means to me is
-              important — long enough to deserve its own piece, which I'll write
+              important, long enough to deserve its own piece, which I'll write
               another day.
             </p>
 
             <p>
               I learned to code through setting up Minecraft servers and mods.
-              Not because I was thinking about computer science — I was focused
+              Not because I was thinking about computer science. I was focused
               on mini-games and the online communities that came with them.
               Programming came naturally when I wanted more control over the
               game. Minecraft, being as open as it was, let me see and edit all
@@ -2631,7 +2634,7 @@
               enjoyable for me, and later for others. In that time I learned
               about data structures, port forwarding, and the value of clean
               code. What's most important to understand is that I was able to
-              simulate all aspects of life — physical, digital, lawful —
+              simulate all aspects of life: physical, digital, lawful,
               virtually, while also learning the hardware that made it possible.
               Being able to build worlds and actively play in them at the same
               time is a unique experience. I hope you see how I use that today.
@@ -2642,8 +2645,8 @@
               Programming has always been a means to an end, and I've never
               minded using whatever produces the best results. That perspective
               guided my academic journey. I've encountered many challenges and
-              opportunities, and I've come to accept that curiosity is permanent
-              — what I know, what I know I don't, and everything I haven't found
+               opportunities, and I've come to accept that curiosity is permanent.
+               What I know, what I know I don't, and everything I haven't found
               yet is always shifting. Right now I'm going deeper into the
               hardware that keeps the internet running, and it's genuinely
               fascinating.
@@ -2653,7 +2656,7 @@
               This site is a directory for things I believe are important or
               interesting. I hope my experiences and the tools I share can help
               guide others to create. I believe in open source and security by
-              design — the full spectrum of developers, from corporate to
+              design. The full spectrum of developers, from corporate to
               hobbyist, working together. This is exactly how the internet was
               built and how it continues to operate. That balance is fragile but
               worth acknowledging, so neither side ends up footing the bill
@@ -2851,7 +2854,7 @@
                   <span class="site-card-type">Guide</span>
                   <span class="site-card-title">ARM MacBook Buying Guide</span>
                   <span class="site-card-url">mind-of.jordonhgriffin.com/computer/apple/arm-macbook-buying-guide</span>
-                  <p class="site-card-desc">Every ARM MacBook configuration from M1 through M5 — filterable, sortable, with buying philosophy on what actually matters.</p>
+                  <p class="site-card-desc">Every ARM MacBook configuration from M1 through M5, filterable, sortable, with buying philosophy on what actually matters.</p>
                 </div>
               </a>
               <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/" target="_blank" rel="noopener">
@@ -2887,7 +2890,7 @@
                   <span class="site-card-type">Framework</span>
                   <span class="site-card-title">Vortical Progression</span>
                   <span class="site-card-url">mind-of.jordonhgriffin.com/civicism/vortical-progression</span>
-                  <p class="site-card-desc">A model of societal evolution as a vortical progression — cycles of order, chaos, and emergence over time.</p>
+                  <p class="site-card-desc">A model of societal evolution as a vortical progression: cycles of order, chaos, and emergence over time.</p>
                 </div>
               </a>
             </div>
@@ -3155,7 +3158,7 @@
         function resize() {
           canvas.width = window.innerWidth;
           canvas.height = window.innerHeight;
-          CELL = Math.max(8, window.innerWidth * 0.0125); // exact match to CSS 1.25vw — no rounding
+          CELL = Math.max(8, window.innerWidth * 0.0125); // exact match to CSS 1.25vw - no rounding
           // Align origin to CSS background-position: center center
           offX = (canvas.width / 2) % CELL;
           offY = (canvas.height / 2) % CELL;
@@ -3278,7 +3281,7 @@
               ny = p.y + dir.dy;
             grid[ny * cols + nx] = p.num;
             const mySpace = bfsCount(nx, ny);
-            // Sum all opponents' reachable space — minimize it
+            // Sum all opponents' reachable space - minimize it
             const theirSpace = others.reduce(
               (sum, o) => sum + bfsCount(o.x, o.y),
               0,
@@ -3391,6 +3394,6 @@
         requestAnimationFrame(step);
       })();
     </script>
-    <footer>Version 26.4.22.1 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)">MacBook Pro Silicon</a></footer>
+    <footer>Version 26.4.22.3 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)">MacBook Pro Silicon</a></footer>
   </body>
 </html>
