@@ -1,0 +1,12 @@
+name = "jordonhgriffin-live"
+main = "./src/index.js"
+compatibility_date = "2026-05-05"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+
+[[routes]]
+pattern = "live.jordonhgriffin.com"
+custom_domain = true
