@@ -1,0 +1,8 @@
+{
+  "name": "jhg",
+  "version": "26.6.8.1",
+  "pear": {
+    "name": "jhg",
+    "type": "desktop"
+  }
+}
