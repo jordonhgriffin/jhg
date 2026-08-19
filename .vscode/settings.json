@@ -322,6 +322,5 @@
     "extensions.autoUpdate": true,
     "extensions.autoCheckUpdates": true,
     "update.mode": "default",
-    "telemetry.telemetryLevel": "off",
-    "liveServer.settings.port": 5503
+    "telemetry.telemetryLevel": "off"
 }
