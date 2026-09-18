@@ -6,8 +6,11 @@ Personal portfolio site for Jordon H Griffin — Telecom & Systems Professional.
 Live at: `https://jordonhgriffin.com` (canonical: `https://www.jordonhgriffin.com/`)
 GitHub repo: `https://github.com/jordonhgriffin/jhg`
 
-Hosted on **Cloudflare Pages**. Push to `main` triggers deploy.
-Config: `wrangler.toml` — project name `jordonhgriffin-com`, build output dir `.`
+Hosted on **Cloudflare Pages**. Push to `main` triggers deploy (the Pages project is git-connected).
+Config: `wrangler.toml` — project name `jhg`, build output dir `.`
+
+Pages project `jhg` serves `jordonhgriffin.com` and `www.jordonhgriffin.com`.
+Preview URL pattern: `https://<deployment-id>.jhg-dhc.pages.dev`
 
 Do not re-add `wrangler.jsonc` (Workers config) — it conflicts with Pages and was intentionally removed.
 
@@ -69,10 +72,13 @@ Font: Roboto (100, 300, 400, 700) from Google Fonts.
 
 ## Deployment
 
-Only Cloudflare Pages. Push to `main` triggers deploy.
-To manually deploy: `npx wrangler pages deploy .`
+Only Cloudflare Pages. Push to `main` triggers deploy (git-connected Pages project `jhg`).
+To manually deploy: `npx wrangler pages deploy . --project-name jhg --branch main`
 
-Custom domain is managed in Cloudflare dashboard → Pages → jordonhgriffin-com → Custom domains.
+Note: `wrangler.toml` in the repo root is read by Pages, but `npx wrangler pages deploy`
+does NOT reliably pick the project name up from it — pass `--project-name jhg` explicitly.
+
+Custom domain is managed in Cloudflare dashboard → Pages → jhg → Custom domains.
 DNS is handled by Cloudflare automatically when the custom domain is added there.
 
 ---
