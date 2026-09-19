@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Version 26.9.18.5 - add Lora serif for headings (h1-h4) -->
+<!-- Version 26.9.19.1 - mobile nav: drop back-to-top, full-width theme toggle -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -2672,6 +2672,16 @@
           width: 18px;
           height: 18px;
         }
+
+        /* Mobile nav: no back-to-top button — the theme toggle takes the full row */
+        #nav-buttons #to-top {
+          display: none;
+        }
+
+        #nav-buttons #theme-toggle {
+          flex: 1 1 100%;
+          border-right: none;
+        }
       }
 
       /* Heading font — pairs a warmer serif with the wood/paper material layer */
@@ -3647,6 +3657,6 @@
         requestAnimationFrame(step);
       })();
     </script>
-    <footer>Version 26.9.18.5 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)" target="_blank" rel="noopener">MacBook Pro Silicon</a></footer>
+    <footer>Version 26.9.19.1 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)" target="_blank" rel="noopener">MacBook Pro Silicon</a></footer>
   </body>
 </html>
