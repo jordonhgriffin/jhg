@@ -163,7 +163,7 @@
       }
 
       #navigation li {
-        margin: 0.625vw 0;
+        margin: 0;
       }
 
       #navigation a {
@@ -596,7 +596,6 @@
         --dark-bg: #1a1a1a;
         --darker-bg: #000911;
         --text-color: #ffffff;
-        --border-color: var(--glow-color);
       }
 
       [data-theme="dark"] body {
@@ -1669,9 +1668,10 @@
 
       #navigation ul {
         list-style: none;
-        padding: 15px;
+        padding: 0;
         margin: 0;
         width: 100%;
+        box-sizing: border-box;
         background: rgba(255, 255, 255, 0.95);
         border-radius: 1vw;
         box-shadow: 0 0 20px var(--glow-effect);
@@ -1686,15 +1686,17 @@
         text-decoration: none;
         font-size: 1.1em;
         font-weight: 300;
-        transition: all 0.3s ease;
+        transition: background-color 0.2s ease;
         display: block;
-        padding: 0.5vw 1vw;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.85vw 15px;
         border-radius: 0.5vw;
       }
 
       #navigation a:hover {
         background: rgba(0, 0, 0, 0.1);
-        transform: translateX(-5px);
+        transform: none;
       }
 
       [data-theme="dark"] #navigation ul {
@@ -1845,7 +1847,6 @@
       #navigation a.active {
         opacity: 1;
         background: var(--link-hover-bg);
-        transform: translateX(-5px);
         font-weight: 500;
         border-left: 2px solid var(--text-color);
       }
@@ -2350,6 +2351,85 @@
         pointer-events: none;
         opacity: 0;
         transition: opacity 0.6s ease;
+      }
+
+      /* ==========================================================
+         Material layer — wood page background, paper surfaces
+         ========================================================== */
+      :root {
+        --wood-image: url("img/light_wood_tile.jpg");
+        --wood-size: 384px 384px;
+        --wood-repeat: repeat;
+        --paper-image: url("img/light_paper_tile.jpg");
+        --paper-size: 384px 384px;
+        --paper-wash: rgba(255, 252, 245, 0.42);
+        --wood-fallback: #ded8ce;
+      }
+
+      [data-theme="dark"] {
+        --wood-image: url("img/dark_stars_tile.jpg");
+        --wood-size: 493px 739px;
+        --wood-repeat: repeat;
+        --paper-image: url("img/dark_paper_tile.jpg");
+        --paper-size: 384px 384px;
+        --paper-wash: rgba(255, 255, 255, 0.07);
+        --wood-fallback: #111213;
+      }
+
+      /* Wood (light) / star field (dark): the light wood is a viewport-sized
+         fixed layer; the dark star field is a seamless tile repeated at a small
+         fixed size so the stars stay star-sized instead of being magnified. */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        pointer-events: none;
+        background-image: var(--wood-image);
+        background-size: var(--wood-size);
+        background-position: center center;
+        background-repeat: var(--wood-repeat);
+      }
+
+      body {
+        background-color: var(--wood-fallback);
+      }
+
+      [data-theme="dark"] body {
+        background-color: var(--wood-fallback);
+      }
+
+      /* Paper: content islands and navigation menus */
+      .section-island,
+      #navigation ul,
+      #nav-buttons,
+      #mobile-navigation,
+      footer,
+      [data-theme="dark"] .section-island,
+      [data-theme="dark"] #navigation ul,
+      [data-theme="dark"] #nav-buttons,
+      [data-theme="dark"] #mobile-navigation,
+      [data-theme="dark"] footer {
+        background-color: transparent;
+        background-image:
+          linear-gradient(var(--paper-wash), var(--paper-wash)),
+          var(--paper-image);
+        background-size: cover, var(--paper-size);
+        background-position: center center, center center;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed, fixed;
+      }
+
+      /* iOS Safari mishandles background-attachment: fixed on non-root elements */
+      @media (max-width: 768px) {
+        .section-island,
+        #navigation ul,
+        #nav-buttons,
+        #mobile-navigation,
+        footer {
+          background-size: cover, 320px 320px;
+          background-attachment: scroll, scroll;
+        }
       }
     </style>
     <script>

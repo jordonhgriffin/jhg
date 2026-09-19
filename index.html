@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Version 26.9.18.1 - regenerated Civicism and Vortical Progression preview images -->
+<!-- Version 26.9.18.4 - seamless tiles for all wood/paper surfaces; fixed nav border/hover alignment bugs -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -134,6 +134,7 @@
       }
 
       body::before {
+        display: none;
         content: '';
         position: fixed;
         inset: 0;
@@ -164,7 +165,7 @@
         margin: 4%;
         position: relative;
         z-index: 30;
-        border-radius: 50%;
+        border-radius: 0;
       }
 
       #logo img {
@@ -173,7 +174,7 @@
         object-fit: contain;
         padding: 0;
         margin: 0;
-        border-radius: 50%;
+        border-radius: 0;
       }
 
       @media (max-width: 768px) {
@@ -223,7 +224,7 @@
         width: 100%;
         box-sizing: border-box;
         background: rgba(255, 255, 255, 0.95);
-        border-radius: 1vw;
+        border-radius: 0;
         box-shadow: 0 0 20px var(--glow-effect);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -232,7 +233,7 @@
       }
 
       #navigation li {
-        margin: 0.25vw 0;
+        margin: 0;
       }
 
       #navigation a {
@@ -243,7 +244,7 @@
         transition: background-color 0.2s ease, transform 0.2s ease;
         display: block;
         padding: 0.25vw 1vw;
-        border-radius: 0.5vw;
+        border-radius: 0;
       }
 
       #navigation a:hover {
@@ -273,7 +274,7 @@
 
       .section-island {
         background: rgba(255, 255, 255, 0.9);
-        border-radius: 1vw;
+        border-radius: 0;
         border: 1px solid var(--border-color);
         padding: var(--section-spacing);
         margin-bottom: var(--section-spacing);
@@ -394,7 +395,7 @@
       /* Update section island styles for better contrast with grid */
       .section-island {
         background: rgba(255, 255, 255, 0.9);
-        border-radius: 1vw;
+        border-radius: 0;
         border: 1px solid var(--border-color);
         padding: 1.875vw;
         margin-bottom: 3.125vw;
@@ -581,7 +582,7 @@
         padding: 10px 20px;
         cursor: pointer;
         font-size: 1em;
-        border-radius: 8px;
+        border-radius: 0;
       }
 
       .cta-button:hover {
@@ -639,7 +640,6 @@
         --dark-bg: #1a1a1a;
         --darker-bg: #000911;
         --text-color: #ffffff;
-        --border-color: var(--glow-color);
       }
 
       [data-theme="dark"] body {
@@ -690,7 +690,7 @@
         background-color: #f0f0f0;
         padding: 5px 10px;
         margin: 5px;
-        border-radius: 3px;
+        border-radius: 0;
       }
 
       .container {
@@ -805,7 +805,7 @@
       .social-button {
         width: 40px;
         height: 40px;
-        border-radius: 50%;
+        border-radius: 0;
         background-color: transparent;
         display: flex;
         align-items: center;
@@ -920,7 +920,7 @@
         background: rgba(255, 255, 255, 0.9);
         border: 1px solid var(--border-color);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
-        border-radius: 0.5vw;
+        border-radius: 0;
         will-change: transform;
       }
 
@@ -1004,7 +1004,7 @@
         height: 40px;
         object-fit: contain;
         background-color: transparent;
-        border-radius: 0.5vw;
+        border-radius: 0;
         padding: 4px;
       }
 
@@ -1047,7 +1047,7 @@
         max-width: 500px; /* Add max-width for better control */
         padding: 12px 16px;
         border: 2px solid var(--border-color);
-        border-radius: 1vw;
+        border-radius: 0;
         font-size: 16px;
         background-color: rgba(255, 255, 255, 0.9);
         color: var(--text-color);
@@ -1095,7 +1095,7 @@
       .filter-btn {
         padding: 0.5vw 1vw;
         border: 2px solid var(--border-color);
-        border-radius: 20px;
+        border-radius: 0;
         background: transparent;
         cursor: pointer;
         transition: background-color 0.2s ease, color 0.2s ease;
@@ -1283,7 +1283,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 0;
         transition: transform 0.2s ease;
         will-change: transform;
       }
@@ -1439,7 +1439,7 @@
         text-decoration: none;
         font-size: 1.2em;
         text-align: center;
-        border-radius: 0.5vw;
+        border-radius: 0;
         transition: background-color 0.3s ease;
       }
 
@@ -1521,7 +1521,7 @@
         min-height: 28px;
         background-color: transparent;
         border: 2px solid var(--border-color);
-        border-radius: 50%;
+        border-radius: 0;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -1592,7 +1592,7 @@
         margin: 4%;
         position: relative;
         z-index: 30;
-        border-radius: 50%;
+        border-radius: 0;
       }
 
       /* Content area */
@@ -1702,11 +1702,13 @@
 
       #navigation ul {
         list-style: none;
-        padding: 15px;
+        padding: 0;
         margin: 0;
+        margin-top: 20px;
         width: 100%;
+        box-sizing: border-box;
         background: rgba(255, 255, 255, 0.95);
-        border-radius: 1vw;
+        border-radius: 0;
         box-shadow: 0 0 20px var(--glow-effect);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
@@ -1719,15 +1721,17 @@
         text-decoration: none;
         font-size: 1.1em;
         font-weight: 300;
-        transition: background-color 0.2s ease, transform 0.2s ease;
+        transition: background-color 0.2s ease;
         display: block;
-        padding: 0.5vw 1vw;
-        border-radius: 0.5vw;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.85vw 15px;
+        border-radius: 0;
       }
 
       #navigation a:hover {
         background: rgba(0, 0, 0, 0.1);
-        transform: translateX(-5px);
+        transform: none;
       }
 
       [data-theme="dark"] #navigation ul {
@@ -1878,7 +1882,6 @@
       #navigation a.active {
         opacity: 1;
         background: var(--link-hover-bg);
-        transform: translateX(-5px);
         font-weight: 500;
         border-left: 2px solid var(--text-color);
       }
@@ -1947,7 +1950,7 @@
           font-size: 1.2em;
           padding: 12px 20px;
           display: block;
-          border-radius: 0.5vw;
+          border-radius: 0;
           transition: background-color 0.2s ease;
         }
 
@@ -1968,7 +1971,7 @@
         width: 100%;
         padding: 12px 16px;
         border: 1px solid var(--border-color);
-        border-radius: 0.5vw;
+        border-radius: 0;
         font-size: 16px;
         background-color: rgba(255, 255, 255, 0.9);
         color: var(--text-color);
@@ -2114,7 +2117,7 @@
 
       .title-container {
         background: rgba(42, 42, 42, 0.9);
-        border-radius: 1vw;
+        border-radius: 0;
         padding: 1.25vw;
         margin-bottom: 30px;
       }
@@ -2214,7 +2217,7 @@
         color: var(--link-color);
         text-decoration: none;
         padding: 4px 8px;
-        border-radius: 4px;
+        border-radius: 0;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         background: var(--link-bg);
         position: relative;
@@ -2239,7 +2242,7 @@
         color: var(--link-color);
         text-decoration: none;
         padding: 4px 8px;
-        border-radius: 4px;
+        border-radius: 0;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         background: var(--link-bg);
         position: relative;
@@ -2299,7 +2302,7 @@
         color: var(--link-color);
         text-decoration: none;
         padding: 0.5vw 1vw;
-        border-radius: 0.5vw;
+        border-radius: 0;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         background: var(--link-bg);
         position: relative;
@@ -2414,7 +2417,7 @@
         display: flex;
         flex-direction: column;
         text-decoration: none;
-        border-radius: 0.75vw;
+        border-radius: 0;
         border: 1px solid var(--border-color);
         overflow: hidden;
         transition: all 0.2s ease;
@@ -2508,6 +2511,169 @@
         .site-cards { grid-template-columns: 1fr; }
         .site-card { border-radius: 8px; }
       }
+
+      /* ==========================================================
+         Material layer — wood page background, paper surfaces
+         ========================================================== */
+      :root {
+        --wood-image: url("img/light_wood_tile.jpg");
+        --wood-size: 384px 384px;
+        --wood-repeat: repeat;
+        --paper-image: url("img/light_paper_tile.jpg");
+        --paper-size: 384px 384px;
+        --paper-wash: rgba(255, 252, 245, 0.42);
+        --wood-fallback: #ded8ce;
+      }
+
+      [data-theme="dark"] {
+        --wood-image: url("img/dark_stars_tile.jpg");
+        --wood-size: 493px 739px;
+        --wood-repeat: repeat;
+        --paper-image: url("img/dark_paper_tile.jpg");
+        --paper-size: 384px 384px;
+        --paper-wash: rgba(255, 255, 255, 0.07);
+        --wood-fallback: #111213;
+      }
+
+      /* Wood (light) / star field (dark): viewport-sized fixed layer,
+         so the image never tiles or stretches */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        pointer-events: none;
+        background-image: var(--wood-image);
+        background-size: var(--wood-size);
+        background-position: center center;
+        background-repeat: var(--wood-repeat);
+      }
+
+      body {
+        background-color: var(--wood-fallback);
+      }
+
+      [data-theme="dark"] body {
+        background-color: var(--wood-fallback);
+      }
+
+      /* Paper: content islands and navigation menus */
+      .section-island,
+      #navigation ul,
+      #nav-buttons,
+      #mobile-navigation,
+      footer,
+      [data-theme="dark"] .section-island,
+      [data-theme="dark"] #navigation ul,
+      [data-theme="dark"] #nav-buttons,
+      [data-theme="dark"] #mobile-navigation,
+      [data-theme="dark"] footer {
+        background-color: transparent;
+        background-image:
+          linear-gradient(var(--paper-wash), var(--paper-wash)),
+          var(--paper-image);
+        background-size: cover, var(--paper-size);
+        background-position: center center, center center;
+        background-repeat: no-repeat, repeat;
+        background-attachment: fixed, fixed;
+      }
+
+      /* iOS Safari mishandles background-attachment: fixed on non-root elements */
+      @media (max-width: 768px) {
+        .section-island,
+        #navigation ul,
+        #nav-buttons,
+        #mobile-navigation,
+        footer {
+          background-size: cover, 320px 320px;
+          background-attachment: scroll, scroll;
+        }
+      }
+
+      /* Attach theme-toggle and back-to-top buttons directly under the nav menu */
+      #navigation {
+        gap: 0;
+      }
+
+      #nav-buttons {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        border: 1px solid var(--border-color);
+        border-top: none;
+        box-sizing: border-box;
+      }
+
+      #nav-buttons #theme-toggle,
+      #nav-buttons #to-top {
+        position: static;
+        bottom: auto;
+        right: auto;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: 32px;
+        min-width: 0;
+        min-height: 0;
+        flex: 1 1 50%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        background: transparent;
+      }
+
+      #nav-buttons #theme-toggle svg,
+      #nav-buttons #to-top svg {
+        width: 16px;
+        height: 16px;
+        min-width: 0;
+        min-height: 0;
+      }
+
+      #nav-buttons #to-top {
+        align-items: stretch;
+        justify-content: stretch;
+      }
+
+      #nav-buttons #to-top a {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #nav-buttons #theme-toggle {
+        border-right: 1px solid var(--border-color);
+      }
+
+      #nav-buttons #theme-toggle:hover,
+      #nav-buttons #to-top:hover,
+      #nav-buttons #to-top a:hover {
+        transform: none;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.08);
+      }
+
+      [data-theme="dark"] #nav-buttons #theme-toggle:hover,
+      [data-theme="dark"] #nav-buttons #to-top:hover,
+      [data-theme="dark"] #nav-buttons #to-top a:hover {
+        background: rgba(255, 255, 255, 0.12);
+      }
+
+      @media (max-width: 768px) {
+        #nav-buttons #theme-toggle,
+        #nav-buttons #to-top {
+          height: 40px;
+        }
+
+        #nav-buttons #theme-toggle svg,
+        #nav-buttons #to-top svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
     </style>
     <script>
 
@@ -2586,6 +2752,22 @@
             </li>
             <li><a href="https://mind-of.jordonhgriffin.com" target="_blank">Mind of Jordon</a></li>
           </ul>
+          <div id="nav-buttons">
+            <div id="theme-toggle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
+                />
+              </svg>
+            </div>
+            <div id="to-top">
+              <a href="#hero">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </nav>
 
         <!-- Mobile Menu Toggle Button -->
@@ -3077,21 +3259,6 @@
         </div>
       </div>
     </div>
-    <div id="to-top">
-      <a href="#hero">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z" />
-        </svg>
-      </a>
-    </div>
-    <div id="theme-toggle">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path
-          d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"
-        />
-      </svg>
-    </div>
-
     <!-- Add overlay -->
     <div class="overlay"></div>
     <script>
@@ -3473,6 +3640,6 @@
         requestAnimationFrame(step);
       })();
     </script>
-    <footer>Version 26.9.18.1 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)" target="_blank" rel="noopener">MacBook Pro Silicon</a></footer>
+    <footer>Version 26.9.18.4 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)" target="_blank" rel="noopener">MacBook Pro Silicon</a></footer>
   </body>
 </html>
