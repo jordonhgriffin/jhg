@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Version 26.9.26.1 - social preview image (og/twitter) from site screenshot -->
+<!-- Version 26.10.1.1 - remove Sites section (now lives only on Mind of Jordon) -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -2359,138 +2359,6 @@
         object-fit: contain;
       }
 
-      /* Sites section */
-      #site-section-header {
-        text-align: center;
-        padding: 15px 0 20px 0;
-        margin-bottom: 20px;
-        border-bottom: 1px solid var(--border-color);
-      }
-
-      #site-section-header h3 {
-        font-size: 1.6em;
-        font-weight: 700;
-        margin: 0 0 8px;
-        padding: 0;
-        border: none;
-        color: var(--text-color);
-      }
-
-      #site-section-header p {
-        font-size: 1.1em;
-        font-weight: 300;
-        margin: 0;
-        opacity: 0.8;
-        color: var(--text-color);
-        text-align: center;
-      }
-
-      .site-cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        margin-top: 8px;
-      }
-
-      .site-card {
-        display: flex;
-        flex-direction: column;
-        text-decoration: none;
-        border-radius: 0;
-        border: 1px solid var(--border-color);
-        overflow: hidden;
-        transition: all 0.2s ease;
-        color: var(--text-color);
-        background: rgba(0, 0, 0, 0.02);
-      }
-
-      .site-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 8px 24px var(--glow-effect);
-      }
-
-      [data-theme="dark"] .site-card {
-        background: rgba(255, 255, 255, 0.04);
-        border-color: rgba(255, 255, 255, 0.1);
-      }
-
-      [data-theme="dark"] .site-card:hover {
-        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.6);
-      }
-
-      .site-card-preview {
-        width: 100%;
-        aspect-ratio: 16 / 10;
-        background: transparent;
-        overflow: hidden;
-      }
-
-      .site-card-preview img[src$=".svg"] {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
-      }
-
-      .site-card-preview img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        display: block;
-      }
-
-      .site-card-body {
-        padding: 10px 14px 14px;
-      }
-
-      .site-card-type {
-        font-size: 0.68em;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        opacity: 0.45;
-        display: block;
-        margin: 0 0 4px;
-        color: var(--text-color);
-      }
-
-      [data-theme="dark"] .site-card-type { color: #ccc; }
-
-      .site-card-title {
-        font-size: 1.05em;
-        font-weight: 700;
-        display: block;
-        margin: 0 0 4px;
-        color: var(--text-color);
-      }
-
-      [data-theme="dark"] .site-card-title { color: #fff; }
-
-      .site-card-url {
-        font-size: 0.78em;
-        color: #c0392b;
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      [data-theme="dark"] .site-card-url { color: #e74c3c; }
-
-      .site-card-desc {
-        font-size: 0.88em;
-        line-height: 1.65;
-        opacity: 0.65;
-        margin: 0;
-        color: var(--text-color);
-      }
-
-      [data-theme="dark"] .site-card-desc { color: #ccc; opacity: 1; }
-
-      @media (max-width: 768px) {
-        .site-cards { grid-template-columns: 1fr; }
-        .site-card { border-radius: 8px; }
-      }
-
       /* ==========================================================
          Material layer — wood page background, paper surfaces
          ========================================================== */
@@ -2739,7 +2607,6 @@
             <li><a href="#welcome">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#sites">Sites</a></li>
             <li><a href="#contact">Connect</a></li>
             <li>
               <a href="https://github.com/jordonhgriffin/jhg" target="_blank"
@@ -2774,7 +2641,6 @@
             <li><a href="#welcome">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#sites">Sites</a></li>
             <li><a href="#contact">Connect</a></li>
             <li>
               <a href="https://github.com/jordonhgriffin/jhg" target="_blank"
@@ -3017,124 +2883,6 @@
               </div>
             </div>
 
-          </div>
-
-          <div class="section-island">
-            <div id="sites" style="scroll-margin-top: 80px;"></div>
-            <div id="site-section-header">
-              <h3>Mind of Jordon</h3>
-              <p>Thoughts, Guides, and Tools</p>
-            </div>
-            <div class="site-cards">
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/computer-science/apple/arm-macbook-buying-guide.html" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-armbuy.png" alt="ARM MacBook Buying Guide preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Guide</span>
-                  <span class="site-card-title">ARM MacBook Buying Guide</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/computer-science/apple/arm-macbook-buying-guide</span>
-                  <p class="site-card-desc">Every ARM MacBook configuration from M1 through M5 — filterable, sortable, with buying philosophy on what actually matters.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/electromagnetic-spectrum/Color-Bicone-Spectrum/" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-color.png" alt="Color Bicone Spectrum preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Tool</span>
-                  <span class="site-card-title">Color Bicone Spectrum</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/electromagnetic-spectrum/Color-Bicone-Spectrum</span>
-                  <p class="site-card-desc">Interactive 3D visualization of visible light in color space. Explore hue, saturation, and brightness geometry with real-time point inspection.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-civicism.png" alt="Civicism preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Framework</span>
-                  <span class="site-card-title">Civicism</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/civicism</span>
-                  <p class="site-card-desc">A framework for civic thinking and engagement.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/case-studies/civicism-defining-essay" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/Societas-Melior-Pro-Bono-Omnium.svg" alt="Civicism Defining Essay preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Essay</span>
-                  <span class="site-card-title">Civicism: A Definitional Framework</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/civicism/case-studies/civicism-defining-essay</span>
-                  <p class="site-card-desc">The first formal academic definition of Civicism — a people-centered framework for social organization guided by Societas Melior Pro Bono Omnium.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/case-studies/" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/Societas-Melior-Pro-Bono-Omnium.svg" class="preview-contain" alt="Civicism Case Studies preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Index</span>
-                  <span class="site-card-title">Civicism Case Studies</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/civicism/case-studies</span>
-                  <p class="site-card-desc">A methodology for analyzing institutions, philosophies, and policies through the Civicism framework. Includes all published case studies.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/computer-science/computing-data-workflow/" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-computing-data-workflow.png" alt="Computing Data Workflow preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Architecture</span>
-                  <span class="site-card-title">Computing Data Workflow</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/computer-science/computing-data-workflow</span>
-                  <p class="site-card-desc">Interactive diagram showing how code flows from MacBook through IDEs, LLMs, GitHub, and deployment platforms.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/electromagnetic-spectrum/" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-em.png" alt="Electromagnetic Spectrum preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Reference</span>
-                  <span class="site-card-title">Electromagnetic Spectrum</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/electromagnetic-spectrum</span>
-                  <p class="site-card-desc">A grand visual navigation of the electromagnetic manifold, from cosmic gamma rays to planetary-scale radio waves.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/computer-science/apple/mac-apps.html" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-macapps.png" alt="My Mac Apps preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Reference</span>
-                  <span class="site-card-title">My Applications & Tools</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/computer-science/apple/mac-apps</span>
-                  <p class="site-card-desc">Every app I use regularly on MacOS, organized by category with search and filtering.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://oakwildnetwork.com" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-oakwild.png" alt="Oakwild Network preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Games</span>
-                  <span class="site-card-title">Oakwild Network</span>
-                  <span class="site-card-url">oakwildnetwork.com</span>
-                  <p class="site-card-desc">A Minecraft Java Edition server with multiple game modes — fast-paced paintball, skyblock survival, and vanilla-plus gameplay with cross-server cosmetics.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/case-studies/magnifica-humanitas.html" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/Societas-Melior-Pro-Bono-Omnium.svg" alt="Magnifica Humanitas preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Case Study</span>
-                  <span class="site-card-title">Pope Leo XIV's Magnifica Humanitas &amp; Civicism</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/civicism/case-studies/magnifica-humanitas</span>
-                  <p class="site-card-desc">A close reading of Pope Leo XIV's encyclical alongside the Civicism framework — both independently conclude that systems must serve human flourishing, not accumulation.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/case-studies/us-constitution" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/Societas-Melior-Pro-Bono-Omnium.svg" class="preview-contain" alt="The U.S. Constitution &amp; Civicism preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Case Study</span>
-                  <span class="site-card-title">The U.S. Constitution &amp; Civicism</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/civicism/case-studies/us-constitution</span>
-                  <p class="site-card-desc">The Constitution is the governance architecture. Civicism is the framework for what that architecture is supposed to build. 12 alignments, 11 divergences, 23 references.</p>
-                </div>
-              </a>
-              <a class="site-card" href="https://mind-of.jordonhgriffin.com/civicism/vortical-progression.html" target="_blank" rel="noopener">
-                <div class="site-card-preview"><img src="img/com-vortical.png" alt="Vortical Progression preview" loading="lazy" /></div>
-                <div class="site-card-body">
-                  <span class="site-card-type">Framework</span>
-                  <span class="site-card-title">Vortical Progression</span>
-                  <span class="site-card-url">mind-of.jordonhgriffin.com/civicism/vortical-progression</span>
-                  <p class="site-card-desc">A model of societal evolution as a vortical progression — cycles of order, chaos, and emergence over time.</p>
-                </div>
-              </a>
-            </div>
           </div>
 
           <div class="section-island">
@@ -3617,6 +3365,6 @@
         requestAnimationFrame(step);
       })();
     </script>
-    <footer>Version 26.9.26.1 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)" target="_blank" rel="noopener">MacBook Pro Silicon</a></footer>
+    <footer>Version 26.10.1.1 · Made by <a href="https://jordonhgriffin.com">JHG</a> on <a href="https://en.wikipedia.org/wiki/MacBook_Pro_(Apple_silicon)" target="_blank" rel="noopener">MacBook Pro Silicon</a></footer>
   </body>
 </html>
